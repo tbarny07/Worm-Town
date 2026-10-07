@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome to Worm Town</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #140b00;
+            color: white;
+            font-family: "Indie Flower", "Segoe Print";
+        }
+
+        header {
+            text-align: center;
+            padding: 10px 20px 25px;
+        }
+
+        header h1 {
+            font-size: 25px;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            max-width: 850px;
+            margin: 30px auto 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: #ef8cff;
+        }
+
+        /* =========================
+           MAIN CONTENT
+        ========================= */
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section {
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 50px;
+            padding: 20px 40px;
+        }
+
+        .section.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .text {
+            width: 42%;
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .text p {
+            margin-bottom: 8px;
+        }
+
+        .image-box {
+            width: 300px;
+            height: 133px;
+            background-color: #d9d9d9;
+            color: #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        footer {
+            max-width: 500px;
+            margin: 50px auto 10px;
+            text-align: center;
+            font-size: 11px;
+            line-height: 1.5;
+            padding: 0 20px 10px;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 21px;
+            }
+
+            nav {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .section,
+            .section.reverse {
+                flex-direction: column;
+                gap: 25px;
+                padding: 20px;
+            }
+
+            .text {
+                width: 90%;
+                font-size: 11px;
+            }
+
+            .image-box {
+                width: 80%;
+                max-width: 300px;
+            }
+
+            .worm {
+                height: 80px;
+            }
+
+            .worm path {
+                stroke-width: 13;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+        <h1>WELCOME TO WORM TOWN</h1>
+
+        <nav>
+            <a href="WormTownHome.html">Home</a>
+            <a href="WormTownFounding.html">Founding</a>
+            <a href="WormTownAmenities.html">Amenities</a>
+            <a href="WormTownAdvertisements.html">Advertisements</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="section">
+
+            <div class="text">
+                <p>
+                    Humble worms humble living
+                </p>
+
+                <p>
+                    Worm Town is all about living that simple life
+                    beneath the dirt. Worm Town started as a joke
+                    but truly has grown to be a community that is
+                    no joke. Find out more on the founding tab
+                    <a href="WormTownFounding.html">Right here</a>
+                </p>
+            </div>
+
+            <div class="image-box">
+                Pic of Worm Town
+            </div>
+
+        </section>
+
+
+        <section>
+            <img src="WORM.png" alt="Worm Divider" style="width: 100%; max-width: 1000px; display: block; margin: auto;">
+        </section>
+
+        
+
+        <section class="section reverse">
+
+            <div class="text">
+                <p>
+                    Here in Worm Town we care and look out for our fellow worms.
+                    Because of this Worm Town caters to its residents
+                    with a variety of free to access and use amenities
+                    whether it be the worm pool to the communal dirt
+                    hole. Find out everything we have<br>
+                    <a href="WormTownAmenities.html">In here</a>
+                </p>
+            </div>
+
+            <div class="image-box">
+                Pic of Worm Pool?
+            </div>
+
+        </section>
+
+
+        <section>
+            <img src="WORM.png" alt="Worm Divider" style="width: 100%; max-width: 1000px; display: block; margin: auto;">
+        </section>
+
+        <section class="section">
+
+            <div class="text">
+                <p>
+                    Since we are a town there are several
+                    storefronts that can be found around the town.
+                    Find out what shops we currently have and
+                    potentially get your own ad spot<br>
+                    <a href="WormTownAdvertisements.html">Over here</a>
+                </p>
+            </div>
+
+            <div class="image-box">
+                Pic of Dirt store
+            </div>
+
+        </section>
+
+        <section>
+            <img src="WORM.png" alt="Worm Divider" style="width: 100%; max-width: 1000px; display: block; margin: auto;">
+        </section>
+
+
+
+    </main>
+
+    <footer>
+
+        <p>
+            Even if you aren't planning to live in Worm Town we are
+            still very happy to have tourists and visitors to experience
+            the joy of being a worm in this big wiggly world.
+            Worm Town is always looking for potential residents and
+            is always looking to give people's tours :]
+        </p>
+
+    </footer>
+
+</body>
+</html>
